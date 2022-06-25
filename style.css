@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Potta+One&family=Roboto:wght@700&family=Rubik+Glitch&family=Wallpoet&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(25deg, rgba(38,56,89,1) 38.5%, rgba(48,71,94,1) 100%);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 98.3vh;
+}
+
+h1{
+    font-family: 'Wallpoet', cursive;
+    font-size: 3.5rem;
+    color: azure;
+}
+
+#sketchBox{
+    height: 600px;
+    width: 600px;
+    background-color: white;
+}
+
+#tools{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.radioButtons{
+    height: 30px;
+    width: 100px;
+}
+.color{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5.3vh;
+    width: 5.3vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.color::-webkit-color-swatch{
+    border-radius: 10px;
+    border: 1px solid azure;
+}
+
+.radioButtons{
+    -webkit-appearance: none;
+    height: 4.2vh;
+    width: 4.2vh;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.radioButtons:checked{
+    background-color: rgb(217, 223, 223);
+}
+
+.slider{
+    height: 30px;
+    width: 165px;
+    background-color: rgb(35, 111, 141);
+    margin: 10px;
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.gridValue {
+    height: 20px;
+    width: 25px;
+    background-color: azure;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}

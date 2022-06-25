@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch It</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Etch-A-Sketch</h1>
+        <div id="sketchBox" x-data></div>
+        <div id="tools">
+            <input type="color" class="color">
+            <input type="radio" name="sketchTools" class="radioButtons">
+            <input type="radio" name="sketchTools" class="radioButtons">
+        </div>
+        <div class="slider">
+            <input type="range" min="16" max="64" id="gridNumber" value="16">
+            <div class="gridValue"></div>
+        </div>
+        
+        <button onclick="changeGrid()">Change Grid</button>
+    </div>
+</body>
+</html> 
