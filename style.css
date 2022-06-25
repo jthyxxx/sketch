@@ -78,7 +78,7 @@ h1{
     margin-right: 3px;
 }
 
-.erase,.clear,.rainbow{
+.erase,.clear{
     display: flex;
     height: 4.3vh;
     width: 4.3vh;
@@ -86,10 +86,6 @@ h1{
     border: none;
 }
 
-.erase{
-    margin-right: 5px;
-}
-
-.clear{
+.erase,.clear{
     margin-right: 5px;
 }

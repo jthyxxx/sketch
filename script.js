@@ -2,7 +2,6 @@ const sketchBox = document.querySelector('#sketchBox')
 let grid = document.querySelector('#gridNumber')
 let number = document.querySelector('.gridValue')
 let color = document.querySelector('.color')
-
 let gridNumber = grid.value
 let newColor = color.value
 
@@ -63,10 +62,4 @@ let clearAll = () => {
     removeAllChildNodes(sketchBox)
     changeGrid(grid.value)
     newColor = color.value
-}
-
-let rainbowColor = () => {
-    let red = Math.floor(Math.random()*255)
-    let green = Math.floor(Math.random()*255)
-    let blue = Math.floor(Math.random()*255)
 }
