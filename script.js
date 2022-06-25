@@ -11,15 +11,14 @@ let length = Math.sqrt(600*600/numBox)
 
 number.innerText = gridNumber
 
-sketchBox.style.display = 'flex'
-sketchBox.style.flexWrap = 'wrap'
-
 for(let i = 0; i < numBox; i++){
     let box = document.createElement('div')
     box.classList.add('boxes')
     box.style.height = length + 'px'
     box.style.width = length + 'px'
-    box.style.border = '1px solid blue'
+    box.addEventListener('mouseenter', (e) => {
+        e.target.style.backgroundColor = newColor
+    })
     sketchBox.appendChild(box)
 }
 
@@ -50,9 +49,24 @@ let changeGrid = (number) => {
     }
 }
 
-function removeAllChildNodes(parent) {
+let removeAllChildNodes = (parent) => {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
 }
 
+let erase = () => {
+    newColor = 'white'
+}
+
+let clearAll = () => {
+    removeAllChildNodes(sketchBox)
+    changeGrid(grid.value)
+    newColor = color.value
+}
+
+let rainbowColor = () => {
+    let red = Math.floor(Math.random()*255)
+    let green = Math.floor(Math.random()*255)
+    let blue = Math.floor(Math.random()*255)
+}

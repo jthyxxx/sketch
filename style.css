@@ -25,6 +25,8 @@ h1{
     height: 600px;
     width: 600px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #tools{
@@ -32,13 +34,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3px;
 }
 
-
-.radioButtons{
-    height: 30px;
-    width: 100px;
-}
 .color{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -51,21 +49,11 @@ h1{
 }
 
 .color::-webkit-color-swatch{
-    border-radius: 10px;
+    border-radius: 50%;
     border: 1px solid azure;
 }
 
-.radioButtons{
-    -webkit-appearance: none;
-    height: 4.2vh;
-    width: 4.2vh;
-    background-color: azure;
-    border-radius: 10px;
-}
 
-.radioButtons:checked{
-    background-color: rgb(217, 223, 223);
-}
 
 .slider{
     height: 30px;
@@ -88,4 +76,20 @@ h1{
     justify-content: center;
     align-items: center;
     margin-right: 3px;
+}
+
+.erase,.clear,.rainbow{
+    display: flex;
+    height: 4.3vh;
+    width: 4.3vh;
+    border-radius: 10px;
+    border: none;
+}
+
+.erase{
+    margin-right: 5px;
+}
+
+.clear{
+    margin-right: 5px;
 }
