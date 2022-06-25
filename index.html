@@ -12,18 +12,16 @@
 <body>
     <div id="container">
         <h1>Etch-A-Sketch</h1>
-        <div id="sketchBox" x-data></div>
+        <div id="sketchBox"></div>
         <div id="tools">
             <input type="color" class="color">
             <input type="radio" name="sketchTools" class="radioButtons">
             <input type="radio" name="sketchTools" class="radioButtons">
         </div>
         <div class="slider">
-            <input type="range" min="16" max="64" id="gridNumber" value="16">
+            <input type="range" min="16" max="100" id="gridNumber" value="16">
             <div class="gridValue"></div>
         </div>
-        
-        <button onclick="changeGrid()">Change Grid</button>
     </div>
 </body>
 </html> 

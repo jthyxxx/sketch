@@ -19,6 +19,7 @@ for(let i = 0; i < numBox; i++){
     box.classList.add('boxes')
     box.style.height = length + 'px'
     box.style.width = length + 'px'
+    box.style.border = '1px solid blue'
     sketchBox.appendChild(box)
 }
 
@@ -42,6 +43,9 @@ let changeGrid = (number) => {
         box.classList.add('boxes')
         box.style.height = newLength + 'px'
         box.style.width = newLength + 'px'
+        box.addEventListener('mouseenter', (e) => {
+            e.target.style.backgroundColor = newColor
+        })
         sketchBox.appendChild(box)
     }
 }
@@ -52,14 +56,3 @@ function removeAllChildNodes(parent) {
     }
 }
 
-let b = document.querySelectorAll('.boxes')
-
-let newb = Array.from(b)
-
-sketchBox.addEventListener('click', () => {
-    newb.forEach((bx)=> {
-        bx.addEventListener('onmouseover', () => {
-            bx.style.backgroundColor = 'red'
-        })
-    })
-})
